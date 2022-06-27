@@ -45,7 +45,9 @@ a {
     font-size: 1.1em;
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
+    transition: 1.5s;
 }
+
 body{
     font-family: 'Roboto', sans-serif;
     position: relative;
@@ -75,7 +77,8 @@ main{
 
 h1{
     display: flex;
-    justify-content: center;    
+    justify-content: center;  
+    margin: 1em;  
 }
 p{
     display: flex;
@@ -162,6 +165,10 @@ h2{
     text-align: center;
     margin-top: 2em;
 }
+h3{
+    font-size: 1.5em;
+    text-align: center;
+}
 /*nosotros*/
 /*carta*/
 .container{
@@ -201,6 +208,7 @@ h2{
 .article4{
     display: flex;
     justify-content: center;
+    margin-top: 1em;
     margin-bottom: 4em;
     width: 95vw;
     height: auto;
@@ -216,7 +224,7 @@ h3{
 .article5{
     display: flex;
     justify-content: center;
-    margin-bottom: 2em;
+    margin-bottom: 3em;
     width: 95vw;
     height: auto;
     align-items: center;
@@ -229,12 +237,16 @@ h3{
     margin: 1em;
     background-color: #cbd1cc;
     width: 98vw;
-    max-height: 20em;
+    max-height: 16em;
 }
+
 /*carta*/
 
 /*almacen*/
-
+.aside {
+    margin-bottom: 3em;
+    max-height: 635px;
+}
 .galeria2{
     display:grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -356,4 +368,13 @@ img{
         
        
     }
+}
+a:hover {
+    font-size: 1.3em;
+    transition: 1.5s;
+}
+
+
+@keyframes animation1 {
+
 }
