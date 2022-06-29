@@ -100,6 +100,11 @@ img{
     height: 100%;
     width: 100%;
     object-fit: cover;
+    animation-name: animation1;
+    animation-duration: 3s;
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+   
+
 }
 
 .mapa{
@@ -171,7 +176,15 @@ h3{
 }
 /*nosotros*/
 /*carta*/
-.container{
+/*.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30em;
+    height: 30em;
+    padding: 1em;
+}*/
+.card3{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -179,7 +192,6 @@ h3{
     height: 30em;
     padding: 1em;
 }
-
 .article{
     display: flex;
     justify-content: center;
@@ -247,13 +259,13 @@ h3{
     margin-bottom: 3em;
     max-height: 635px;
 }
-.galeria2{
+/*.galeria2{
     display:grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-auto-rows: 500px;   
     grid-gap: 1em;  
     margin: 1em 0;
-}
+}*/
 img{
     height: 100%;
     width: 100%;
@@ -369,12 +381,20 @@ img{
        
     }
 }
+/*Override Bootstrap*/
 a:hover {
-    font-size: 1.3em;
-    transition: 1.5s;
+ color:inherit;
+}
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+h3 {
+    padding: 0em;
+    text-align: center;
 }
 
-
-@keyframes animation1 {
-
+.galeria2 img{
+    height: 400px;
+    margin-bottom: 1em;
 }
