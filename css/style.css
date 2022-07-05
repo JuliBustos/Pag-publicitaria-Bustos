@@ -247,7 +247,7 @@ h3{
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-auto-rows: 500px;   
     grid-gap: 1em;  
-    margin: 1em 0;
+    margin: 1em 2em;
 }
 img{
     height: 100%;
@@ -255,6 +255,19 @@ img{
     object-fit: cover;
     }
 /*almacen*/
+
+/*contacto*/
+.form{
+    margin: 3em 0;
+    padding: 1em;
+}
+.main{
+    background-image: url(../images/flores.JPG);    
+}
+.h1{
+    background-color: white;
+}
+/*contacto*/
 
 @media (max-width:1020px){
     .galeria2{

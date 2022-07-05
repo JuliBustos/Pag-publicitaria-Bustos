@@ -1,0 +1,23 @@
+{
+  "name": "pag-publicitaria---bustos",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JuliBustos/Pag-publicitaria-Bustos.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JuliBustos/Pag-publicitaria-Bustos/issues"
+  },
+  "homepage": "https://github.com/JuliBustos/Pag-publicitaria-Bustos#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1"
+  }
+}
