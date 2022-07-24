@@ -1,0 +1,19 @@
+
+.main{
+    background-image: url(../images/flores.JPG);
+    opacity: 0.9;    
+}
+.h2{
+    margin: map-get($spacings, spacing-small); 
+}
+.contact{
+    @include flex(flex, column, center, center);
+    @include style(black, #ffffff);
+    padding: 5em;
+    opacity: 0.7;
+    font-weight: bold;
+    .form{
+        margin: 0 1em;
+        padding: 1em;
+    }
+}

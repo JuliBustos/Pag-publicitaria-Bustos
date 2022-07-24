@@ -1,0 +1,16 @@
+.aside {
+    margin-bottom: 3em;
+    max-height: 635px;
+}
+.galeria2{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-auto-rows: 500px;   
+    grid-gap: 1em;  
+    margin: 1em 2em;
+}
+img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    }

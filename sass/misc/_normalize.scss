@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    min-height: 100vh;
+    color: $color-primario;
+    font-weight: bold;   
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+}
+h1{
+    display: flex;
+    justify-content: center;  
+    margin: 1em;  
+}
+p{
+    display: flex;
+    justify-content: center;
+    font-size: map-get($spacings, spacing-small);
+    padding: 5px;
+    text-align: justify;
+}

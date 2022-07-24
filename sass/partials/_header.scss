@@ -1,0 +1,36 @@
+header {
+    @include flex(flex, stretch, center, center);
+    background-color: white; 
+    max-height: 17vh;   
+    width: 100%;
+    position: static;
+    margin-bottom: 0.7em;
+    nav {
+        @include sizes(60%, 80%);
+    }
+    .header_logo {
+        display: flex;
+        justify-content: center;
+    }
+    .header_tamanio{
+        @include sizes(150px, auto);
+    }
+    .header_nav-lista {
+        display:flex;
+        justify-content: space-around;
+    }
+    .header_nav-lista li{
+        padding: 0.5em;
+    }
+}
+a {
+    text-decoration: none;
+    color:#666;;
+    font-size: 1.1em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    transition: 1.5s;
+    &hover {
+        font-size: 1.3em;
+    }
+}

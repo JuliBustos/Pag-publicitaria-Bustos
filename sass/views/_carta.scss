@@ -1,0 +1,44 @@
+.container{
+    @include flex(flex, column, center, center);
+    @include sizes(30em, 30em);
+    padding: 1em;
+    .container img{
+        width: 400px;
+        height: 400px;
+    }
+}
+.size{
+    @include flex(flex, column, center, center);
+    @include sizes(95vw, auto);
+}
+.article{
+    @extend .size;
+    margin-bottom: map-get($spacings, spacing-large);
+}
+.article2{
+    @extend .size;
+    margin-bottom: 5em;   
+}
+.article3{
+    @extend .size;
+    margin-bottom: 4em;
+}
+.article4{
+    @extend .size;
+    margin-top: 1em;
+    margin-bottom: 5em;
+}
+.article5{
+    @extend .size;
+    margin-bottom: 3em;
+}
+.card2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3em;
+    margin: 1em;
+    background-color: #cbd1cc;
+    width: 98vw;
+    max-height: 16em;
+}

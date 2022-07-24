@@ -5,7 +5,6 @@
     text-decoration: none;
     list-style: none;
 }
-
 header {
     display: flex;
     background-color: white; 
@@ -15,13 +14,10 @@ header {
     position: static;
     margin-bottom: 0.7em;
 }
-
 nav {
     width: 60%;
-    height: 80%;
-   
+    height: 80%;  
 }
-
 .header_logo {
     display: flex;
     justify-content: center;
@@ -30,7 +26,6 @@ nav {
     width: 150px;
     height: auto;
 }
-
 .header_nav-lista {
     display:flex;
     justify-content: space-around;
@@ -38,7 +33,6 @@ nav {
 .header_nav-lista li{
     padding: 0.5em;
 }
-
 a {
     text-decoration: none;
     color:#666;;
@@ -47,21 +41,20 @@ a {
     font-weight: bold;
     transition: 1.5s;
 }
-
+a:hover {
+    font-size: 1.3em;
+}
 body{
     font-family: 'Roboto', sans-serif;
     position: relative;
     min-height: 100vh;
     color: #666;
-    font-weight: bold;
-    
+    font-weight: bold;   
 }
 main{
     display: flex;
     flex-direction: column;
-    align-items: center;
-   
-    
+    align-items: center;   
 }
 /*index*/
 .main_div1{
@@ -74,7 +67,6 @@ main{
     width: 85vw;
     max-height: 550px;
 }
-
 h1{
     display: flex;
     justify-content: center;  
@@ -87,7 +79,6 @@ p{
     padding: 5px;
     text-align: justify;
 }
-
 .galeria{
     display:grid;
     grid-template-columns: 32.6% 32.6% 32.6%;
@@ -96,12 +87,6 @@ p{
     width: 90%;
     margin: 1em;
 }
-img{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
-
 .mapa{
     display:flex;
     justify-content: center;
@@ -124,14 +109,12 @@ footer{
     align-items:center ;
     background-color: #666;
     color: white;
-    font-size: 15px;
+    font-size: 13px;
     max-height: 400px;
-    width: 100%;
-   
+    width: 100%;  
 }
 .footer_div{
-    font-style: italic;
-     
+    font-style: italic;   
  }
 /*footer*/
 
@@ -159,11 +142,17 @@ footer{
     display: flex;
     align-items: center;
     margin: 1em;
-    justify-content: space-evenly;
+    justify-content: center;
+    line-height: 1.5em;   
+}
+.card__child p{
+    width: 40%;
+    text-align: center;
+    margin-right: 3em;
 }
 h2{
     text-align: center;
-    margin-top: 2em;
+    margin-top: 1em;
 }
 h3{
     font-size: 1.5em;
@@ -181,11 +170,14 @@ h3{
     height: 30em;
     padding: 1em;
 }
-
+.container img{
+    width: 400px;
+    height: 400px;
+}
 .article{
     display: flex;
     justify-content: center;
-    margin-bottom: 3em;
+    margin-bottom: 5em;
     width: 95vw;
     height: auto;
     align-items: center;
@@ -234,7 +226,6 @@ h3{
     width: 98vw;
     max-height: 16em;
 }
-
 /*carta*/
 
 /*almacen*/
@@ -258,14 +249,26 @@ img{
 
 /*contacto*/
 .form{
-    margin: 3em 0;
+    margin: 0 1em;
     padding: 1em;
 }
 .main{
-    background-image: url(../images/flores.JPG);    
+    background-image: url(../images/flores.JPG);
+    opacity: 0.9;    
 }
-.h1{
-    background-color: white;
+.h2{
+    margin: 1em; 
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5em;
+    background-color: #ffffff;
+    opacity: 0.7;
+    font-weight: bold;
+    color: black;
 }
 /*contacto*/
 
@@ -360,10 +363,7 @@ img{
     }
 }
 
-a:hover {
-    font-size: 1.3em;
-    transition: 1.5s;
-}
+
 
 
 

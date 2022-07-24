@@ -1,0 +1,29 @@
+.main_div1{
+    background-color: #666;
+    display: flex;
+    justify-content: center;
+    width: 98.5vw;    
+    & img{
+        width: 85vw;
+        max-height: 550px;
+    }
+}
+.galeria{
+    display:grid;
+    grid-template-columns: 32.6% 32.6% 32.6%;
+    grid-auto-rows: 400px;
+    grid-gap: 10px;
+    width: 90%;
+    margin: 1em;
+}
+.mapa{
+    @include flex(flex, stretch, center, center);
+    margin-bottom: map-get($spacings, spacing-small);
+    background-image: url(../images/cuoca.jpg);
+    width: 98vw;
+    color: white;
+    .iframe{
+        width: 50em;
+        height: 35em;
+    }
+}

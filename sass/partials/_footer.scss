@@ -1,0 +1,10 @@
+.footer{
+    @include flex(flex, stretch, space-evenly, center);
+    @include style(white, $color-primario);
+    font-size: 13px;
+    max-height: 400px;
+    width: 100%;  
+    .footer_div{
+        font-style: italic;   
+     }
+}

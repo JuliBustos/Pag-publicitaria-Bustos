@@ -1,0 +1,16 @@
+@mixin sizes($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+@mixin style($color, $background-color) {
+    color: $color;
+    background-color: $background-color;
+}
+
+@mixin flex($dis, $dir, $just, $align) {
+    display: flex;
+    flex-direction: $dir;
+    justify-content: $just;
+    align-items: $align;
+}

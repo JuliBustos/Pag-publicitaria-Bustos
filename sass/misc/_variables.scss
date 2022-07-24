@@ -1,0 +1,13 @@
+$tipografia-general:'Roboto', sans-serif;
+$color-primario: #666;
+$spacings:(
+    spacing-xsmall: 1em,
+    spacing-small: 1.2em,
+    spacing-medium: 3em,
+    spacing-large: 5em,
+);
+@each $key, $val in $spacings {
+    .#{$key} {
+        margin: #{$val};
+       }
+} 
