@@ -8,26 +8,17 @@
     @include flex(flex, column, center, center);
     .card__child{
         @include flex(flex, stretch, center, center);
-        margin: map-get($spacings, spacing-small);
+        margin: map-get($spacings, spacing-small) 0;
         line-height: 1.5em;  
-        .card__child p{
+        p{
             width: 50%;
             text-align: center;
             margin-right: 3em;
-        } 
-        .card__images{
-            @include sizes(20em, 30em);
-            object-fit: cover;
-            align-items: center;
         }   
     }
-}
-h2{
-    text-align: center;
-    margin-top: map-get($spacings, spacing-small);
-}
-h3{
-    font-size: 1.5em;
-    text-align: center;
-    padding: 0.5em;
+    .card__images{
+        @include sizes(20em, 30em);
+        object-fit: cover;
+        align-items: center;
+    } 
 }

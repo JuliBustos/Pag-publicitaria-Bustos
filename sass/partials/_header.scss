@@ -18,9 +18,13 @@ header {
     .header_nav-lista {
         display:flex;
         justify-content: space-around;
-    }
-    .header_nav-lista li{
-        padding: 0.5em;
+        li{
+            padding: 0.5em; 
+            :hover {
+                font-size: 1.3em;
+                transition: 1.5s;
+            }
+        }
     }
 }
 a {
@@ -30,7 +34,4 @@ a {
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
     transition: 1.5s;
-    &hover {
-        font-size: 1.3em;
-    }
 }

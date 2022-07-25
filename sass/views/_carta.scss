@@ -8,7 +8,7 @@
     }
 }
 .size{
-    @include flex(flex, column, center, center);
+    @include flex(flex, none, center, center);
     @include sizes(95vw, auto);
 }
 .article{
@@ -18,10 +18,12 @@
 .article2{
     @extend .size;
     margin-bottom: 5em;   
+    margin-top: 2em;
 }
 .article3{
     @extend .size;
     margin-bottom: 4em;
+    margin-top: 2em;
 }
 .article4{
     @extend .size;

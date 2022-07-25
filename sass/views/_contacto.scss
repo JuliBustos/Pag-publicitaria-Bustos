@@ -3,9 +3,6 @@
     background-image: url(../images/flores.JPG);
     opacity: 0.9;    
 }
-.h2{
-    margin: map-get($spacings, spacing-small); 
-}
 .contact{
     @include flex(flex, column, center, center);
     @include style(black, #ffffff);
@@ -16,4 +13,13 @@
         margin: 0 1em;
         padding: 1em;
     }
+}
+h2{
+    text-align: center;
+    margin: map-get($spacings, spacing-small);   
+}
+h3{
+    font-size: 1.5em;
+    text-align: center;
+    padding: 0.5em;
 }

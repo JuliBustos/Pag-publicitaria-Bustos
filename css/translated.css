@@ -36,9 +36,8 @@ main {
   align-items: center; }
 
 h1 {
-  display: flex;
-  justify-content: center;
-  margin: 1em; }
+  text-align: center;
+  margin: 1em 0; }
 
 p {
   display: flex;
@@ -70,8 +69,11 @@ header {
   header .header_nav-lista {
     display: flex;
     justify-content: space-around; }
-  header .header_nav-lista li {
-    padding: 0.5em; }
+    header .header_nav-lista li {
+      padding: 0.5em; }
+      header .header_nav-lista li :hover {
+        font-size: 1.3em;
+        transition: 1.5s; }
 
 a {
   text-decoration: none;
@@ -80,8 +82,6 @@ a {
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
   transition: 1.5s; }
-  ahover {
-    font-size: 1.3em; }
 
 .footer {
   display: flex;
@@ -98,13 +98,9 @@ a {
 
 /*VIEWS*/
 .main_div1 {
-  background-color: #666;
-  display: flex;
-  justify-content: center;
-  width: 98.5vw; }
+  width: 98vw; }
   .main_div1 img {
-    width: 85vw;
-    max-height: 550px; }
+    width: 100%; }
 
 .galeria {
   display: grid;
@@ -143,26 +139,17 @@ a {
     flex-direction: stretch;
     justify-content: center;
     align-items: center;
-    margin: 1.2em;
+    margin: 1.2em 0;
     line-height: 1.5em; }
-    .card .card__child .card__child p {
+    .card .card__child p {
       width: 50%;
       text-align: center;
       margin-right: 3em; }
-    .card .card__child .card__images {
-      width: 20em;
-      height: 30em;
-      object-fit: cover;
-      align-items: center; }
-
-h2 {
-  text-align: center;
-  margin-top: 1.2em; }
-
-h3 {
-  font-size: 1.5em;
-  text-align: center;
-  padding: 0.5em; }
+  .card .card__images {
+    width: 20em;
+    height: 30em;
+    object-fit: cover;
+    align-items: center; }
 
 .container {
   display: flex;
@@ -178,7 +165,7 @@ h3 {
 
 .size, .article, .article2, .article3, .article4, .article5 {
   display: flex;
-  flex-direction: column;
+  flex-direction: none;
   justify-content: center;
   align-items: center;
   width: 95vw;
@@ -188,10 +175,12 @@ h3 {
   margin-bottom: 5em; }
 
 .article2 {
-  margin-bottom: 5em; }
+  margin-bottom: 5em;
+  margin-top: 2em; }
 
 .article3 {
-  margin-bottom: 4em; }
+  margin-bottom: 4em;
+  margin-top: 2em; }
 
 .article4 {
   margin-top: 1em;
@@ -230,9 +219,6 @@ img {
   background-image: url(../images/flores.JPG);
   opacity: 0.9; }
 
-.h2 {
-  margin: 1.2em; }
-
 .contact {
   display: flex;
   flex-direction: column;
@@ -246,6 +232,15 @@ img {
   .contact .form {
     margin: 0 1em;
     padding: 1em; }
+
+h2 {
+  text-align: center;
+  margin: 1.2em; }
+
+h3 {
+  font-size: 1.5em;
+  text-align: center;
+  padding: 0.5em; }
 
 /*MEDIAQUERIS*/
 @media (max-width: 1020px) {
@@ -292,7 +287,7 @@ img {
     flex-direction: column; } }
 
 @media (max-width: 819px) {
-  .iframe {
+  .mapa .iframe {
     width: 30em;
     height: 25em; } }
 
@@ -305,9 +300,9 @@ img {
     grid-template-columns: 1fr; } }
 
 @media (max-width: 530px) {
-  .iframe {
-    width: 15em;
-    height: 10em; } }
+  .mapa .iframe {
+    width: 20em;
+    height: 15em; } }
 
 @media (max-width: 500px) {
   .galeria {
