@@ -125,7 +125,8 @@ a {
 
 .div2 img {
   width: 98vw;
-  max-height: 530px; }
+  max-height: 530px;
+  margin-bottom: 2em; }
 
 .card {
   width: 90vw;
@@ -319,4 +320,5 @@ h3 {
 
 @media (max-width: 400px) {
   .container {
-    width: 20em; } }
+    width: 20em;
+    padding: 0; } }
